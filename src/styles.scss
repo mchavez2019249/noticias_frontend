@@ -30,7 +30,7 @@ button {
     &:hover{
       transition: 400ms;
       transform: translateY(-0.18rem);
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     }
     &:disabled {
       color: #00000042;
