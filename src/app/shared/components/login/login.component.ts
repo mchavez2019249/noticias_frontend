@@ -5,6 +5,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faGoogle
 } from '@fortawesome/free-brands-svg-icons';
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -18,10 +19,13 @@ import {
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  constructor(private router: Router) {
+  }
   faGoogle = faGoogle
 
   login(){
-    console.log('click')
+    //cambiar con función validación cuenta google
+    this.router.navigate(['/home']);
   }
 
 }
