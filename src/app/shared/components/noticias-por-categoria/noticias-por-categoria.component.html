@@ -1,0 +1,32 @@
+<div class="noticias-container">
+  @if(noticias.length > 0){
+    <div class="header">
+      <h1 class="title-category">
+        {{nameCategory}}
+      </h1>
+    </div>
+    @for (noticia of noticias; track noticia){
+      <mat-card class="noticia mat-elevation-z3" (click)="redirectNoticia(noticia.id)">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image me-3"></div>
+          <div>
+            <span class="author">{{noticia.author}}</span>
+          </div>
+          <div class="more-info">
+            <mat-icon class="more-info__icon">schedule</mat-icon>
+            <span class="more-info__date">{{noticia.publicationDate | date: 'dd/MM/yyyy'}}</span>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <h3>{{noticia.title}}</h3>
+        </mat-card-content>
+      </mat-card>
+    }
+  } @else {
+    <div class="w-100 h-100 justify-content-center align-items-center d-flex">
+      <div class="message-empty">
+        <h1>{{message}}</h1>
+      </div>
+    </div>
+  }
+</div>

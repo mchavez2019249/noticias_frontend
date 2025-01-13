@@ -1,0 +1,57 @@
+.noticias-container{
+  padding: 3em;
+  .example-header-image {
+    background-image: url('https://www.prensalibre.com/wp-content/uploads/2024/08/ximena-fernandez.jpg');
+    background-size: cover;
+  }
+  .noticia{
+    margin-top: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+    &:hover{
+      transition: 400ms;
+      transform: translateY(-0.18rem);
+      box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    }
+  }
+}
+
+.more-info{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .more-info__date{
+    font-weight: lighter;
+    color: #61677A;
+  }
+
+  .more-info__icon{
+    transform: scale(.8);
+    color: #61677A;
+    margin-right: 5px;
+  }
+}
+.message-empty{
+  background-color: rgba(181, 181, 181, 0.3);
+  color: #bcbcbc;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.author{
+  font-weight: bolder;
+  color: #343131;
+}
+
+.title-category{
+  font-size: 4rem;
+  margin-bottom: .5em;
+  color: #8e8e8e;
+}

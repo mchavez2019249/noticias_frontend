@@ -1,1 +1,22 @@
-<p>noticia works!</p>
+<div class="noticia-container">
+  @for (noticia of data; track noticia){
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{noticia.author}}</mat-card-title>
+        <mat-card-subtitle>{{ noticia.publicationDate }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{noticia.image}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+         {{noticia.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+  }
+</div>
