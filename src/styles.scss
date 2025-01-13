@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//COLORS
+$background: #343131;
+$primary-color: #A04747;
+$secondary-color: #D8A25E;
+$icon-color: rgb(175, 1, 1);
+$button-color: #EEDF7A;
+$extra-color: #BBE2EC;
+$text-color: #61677A;
+
+$button-color-disabled: #00000042;
+$button-background-disabled: #0000001f;
+
+//Scroll
+$background-scrollbar-thumb: #808080;
+$background-second-scrollbar-thumb: #f2f2f2;
+$background-second-scrollbar: #ccc;
+
+//CUSTOM COLOR BUTTONS
+button {
+  &.mat-mdc-raised-button.mat-primary{
+    border-radius: 5em;
+    color: white;
+    background-color: $primary-color;
+    transition: 400ms;
+    &:hover{
+      transition: 400ms;
+      transform: translateY(-0.18rem);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &:disabled {
+      color: #00000042;
+      background-color: #0000001f;
+      box-shadow: none !important;
+    }
+  }
+}

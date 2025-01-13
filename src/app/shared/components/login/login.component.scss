@@ -1,0 +1,22 @@
+.login-container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-login__form{
+  border-radius: 1em;
+  .mat-mdc-card-content{
+    height: 20em;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.logo{
+  background: url("/assets/images/news-podcast.png") transparent center 10px no-repeat;
+  background-size: contain;
+  height: 11em;
+  width: 11em;
+  margin-bottom: 15px;
+  display: block;
+}

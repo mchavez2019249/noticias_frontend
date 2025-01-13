@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,12 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  isLoggedIn: boolean = false;
   title = 'Noticias_FE';
+
+  ngOnInit() {
+    this.isLoggedIn = true //cambiar al implementar servicio token
+  }
 }
+

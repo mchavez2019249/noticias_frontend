@@ -1,0 +1,21 @@
+
+.home_container{
+  .logo-container{
+    .logo{
+      background: url("/assets/images/news-podcast.png") transparent center 10px no-repeat;
+      background-size: contain;
+      height: 56px;
+      width: 4em;
+      margin-bottom: 15px;
+      display: block;
+    }
+  }
+  .toolbar{
+    margin-top: .5em;
+    border-radius: 15px;
+  }
+
+  .example-spacer{
+    flex: 1 1 auto;
+  }
+}
